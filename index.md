@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-_Dernière mise à jour : 7 octobre 2026._
+_Dernière mise à jour : 8 octobre 2026._
 
 Interior Mood est une application Android d'aménagement intérieur en 3D, éditée par un
 particulier. Elle fonctionne **entièrement sur votre appareil** : elle ne demande pas l'accès
@@ -20,6 +20,8 @@ Contact : **serge.simono27@gmail.com**
 | Projets : pièces, dimensions, meubles, matériaux, éclairage, variantes | Retrouver vos aménagements | Jusqu'à ce que vous les supprimiez ou désinstalliez l'application |
 | Géométrie et mesures issues d'un scan | Reconstituer la pièce à sa taille réelle | Comme les projets |
 | Suivi des travaux : lots, artisans (nom, entreprise, téléphone, e-mail, adresse, notes que vous saisissez), devis, factures, paiements, avenants, budget | Piloter votre chantier | Comme les projets |
+| Planning, journal de chantier et problèmes notés (dont les réserves de fin de travaux) | Suivre le chantier | Comme les projets |
+| Photos de chantier | Garder l'état avant, l'avancement et le résultat des travaux | Jusqu'à ce que vous les supprimiez ou désinstalliez l'application |
 | Documents copiés dans l'application (devis, factures, photos) | Les retrouver même si l'original est déplacé | Jusqu'à ce que vous les supprimiez ou désinstalliez l'application |
 | Miniatures des projets | Afficher la liste des projets | Recréées au besoin, jamais sauvegardées |
 | Réglages de l'application | Conserver vos préférences | Jusqu'à la désinstallation |
@@ -27,10 +29,19 @@ Contact : **serge.simono27@gmail.com**
 Ces données restent dans l'espace privé de l'application. Elles ne sont envoyées ni à
 l'éditeur ni à un tiers.
 
-## 3. Caméra et scan de la pièce
+## 3. Caméra, scan de la pièce et photos de chantier
 
-La caméra n'est utilisée que si vous lancez un scan, et seulement après votre autorisation.
-Les images de la caméra sont analysées **sur l'appareil**, en temps réel, et **ne sont jamais
+La caméra n'est utilisée que si vous lancez un scan ou prenez une photo, et seulement après votre
+autorisation.
+
+Une **photo de chantier** est prise par l'application appareil photo de votre téléphone, puis
+gardée dans l'espace privé d'Interior Mood ; une photo choisie dans votre galerie y est copiée.
+Elle conserve les métadonnées que votre appareil photo y a écrites — dont la **position**, si vous
+avez activé cette option dans votre appareil photo. Interior Mood ne lit pas cette position et
+n'envoie aucune photo.
+
+Pour le scan :
+les images de la caméra sont analysées **sur l'appareil**, en temps réel, et **ne sont jamais
 enregistrées** : seules la géométrie de la pièce (murs, portes, fenêtres) et ses mesures sont
 conservées dans le projet.
 
@@ -66,7 +77,7 @@ sur votre appareil et ne servent qu'à votre suivi de chantier.
 Si la sauvegarde est activée dans les réglages de votre téléphone, Android peut copier les
 projets et réglages de l'application dans **votre** compte Google, pour les restaurer sur un
 nouvel appareil. Cette sauvegarde est gérée par Android et Google, chiffrée, et l'éditeur n'y
-a pas accès. Les documents copiés en sont exclus en raison de leur taille ; ils sont en
+a pas accès. Les documents copiés et les photos de chantier en sont exclus en raison de leur taille ; ils sont en
 revanche transférés lors d'un transfert direct vers un nouvel appareil. Vous pouvez la désactiver dans les réglages de votre téléphone.
 
 ## 7. Ce qui n'est jamais fait

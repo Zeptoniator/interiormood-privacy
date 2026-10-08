@@ -21,8 +21,10 @@ Contact : **serge.simono27@gmail.com**
 | Géométrie et mesures issues d'un scan | Reconstituer la pièce à sa taille réelle | Comme les projets |
 | Suivi des travaux : lots, artisans (nom, entreprise, téléphone, e-mail, adresse, notes que vous saisissez), devis, factures, paiements, avenants, budget | Piloter votre chantier | Comme les projets |
 | Planning, journal de chantier et problèmes notés (dont les réserves de fin de travaux) | Suivre le chantier | Comme les projets |
+| Décisions prises, garanties (artisan, durée, dates) et date de réception des travaux | Garder la trace du chantier et des garanties | Comme les projets |
 | Photos de chantier | Garder l'état avant, l'avancement et le résultat des travaux | Jusqu'à ce que vous les supprimiez ou désinstalliez l'application |
 | Documents copiés dans l'application (devis, factures, photos) | Les retrouver même si l'original est déplacé | Jusqu'à ce que vous les supprimiez ou désinstalliez l'application |
+| Fichiers exportés (rapport, tableurs, données, sauvegarde) avant leur partage | Vous les remettre pour que vous les partagiez ou les enregistriez | Dossier temporaire : effacés lors d'un export suivant s'ils ont plus de 24 heures, ou par Android quand il libère de la place |
 | Miniatures des projets | Afficher la liste des projets | Recréées au besoin, jamais sauvegardées |
 | Réglages de l'application | Conserver vos préférences | Jusqu'à la désinstallation |
 
@@ -65,11 +67,25 @@ informations repérés vous sont proposés, et ne sont enregistrés qu'après vo
 Les coordonnées des artisans que vous saisissez concernent d'autres personnes : elles restent
 sur votre appareil et ne servent qu'à votre suivi de chantier.
 
+## 4 bis. Assistant du chantier
+
+Le résumé du jour, la revue de la semaine et les réponses aux questions (devis le plus complet,
+dépassement du budget, tâches bloquées, factures à payer) sont **calculés sur l'appareil**, à
+partir des seules données de votre dossier. Aucun service d'intelligence artificielle en ligne
+n'est utilisé, et rien n'est envoyé. L'assistant ne prend aucune décision : il n'accepte pas de
+devis et n'enregistre aucun paiement.
+
 ## 5. Ce qui ne quitte l'appareil qu'à votre demande
 
 - **Rendus et plans** : une image n'est enregistrée dans votre galerie ou partagée que
   lorsque vous le demandez. Le partage passe par le menu de partage d'Android, vers
   l'application que vous choisissez.
+- **Exports du chantier** : le rapport de fin de chantier (PDF), les tableurs (CSV), le
+  dossier complet (JSON) et la sauvegarde complète ne sont créés que lorsque vous le demandez.
+  Vous choisissez ensuite de les partager, par le menu de partage d'Android, ou de les
+  enregistrer à l'emplacement de votre choix. Le dossier complet et la sauvegarde contiennent
+  les coordonnées de vos artisans et vos montants, et la sauvegarde contient aussi vos photos et
+  documents de chantier : ne les confiez qu'à des personnes de confiance.
 - **Import** : un fichier n'est lu que si vous le sélectionnez vous-même.
 
 ## 6. Sauvegarde Android

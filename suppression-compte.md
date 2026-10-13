@@ -6,18 +6,23 @@ compte, rien n'est enregistré en ligne et il n'y a rien à supprimer chez l'éd
 ## Dans l'application
 
 1. Ouvrez l'onglet **Profil**.
-2. Dans **Sauvegarde en ligne**, touchez **Supprimer mes données en ligne**, puis **Supprimer**.
-   Toutes vos sauvegardes dans votre Google Drive et votre profil (Cloud Firestore) sont supprimés
-   immédiatement.
-3. Touchez **Se déconnecter** : l'accès de l'application à votre compte Google est retiré.
+2. Dans **Sauvegarde en ligne**, touchez **Supprimer mon compte**, puis **Supprimer le compte**.
+3. Choisissez votre compte Google pour confirmer.
+
+Sont alors supprimés immédiatement : vos sauvegardes dans votre Google Drive, votre profil (Cloud
+Firestore) et votre **compte de connexion** (identifiant, nom et adresse e-mail enregistrés par
+Firebase Authentication). L'accès de l'application à votre compte Google est retiré.
+
+Pour effacer seulement les données en ligne et garder le compte, touchez plutôt **Supprimer mes
+données en ligne** : les sauvegardes et le profil sont supprimés, le compte reste.
 
 Vos projets restent sur votre téléphone. Pour les effacer, supprimez-les dans l'application ou
 désinstallez-la.
 
-## Sans l'application, ou pour tout supprimer
+## Sans l'application, et pour les dossiers partagés
 
-Pour supprimer aussi votre **compte de connexion** (identifiant, nom et adresse e-mail enregistrés
-par Firebase Authentication) et vos données dans les **dossiers chantier partagés**, écrivez à
+Si vous n'avez plus l'application, ou pour supprimer aussi vos données dans les **dossiers
+chantier partagés**, écrivez à
 **serge.simono27@gmail.com** depuis l'adresse de votre compte Google, avec l'objet
 « Suppression de compte Interior Mood ». Cette demande ne nécessite pas l'application : elle
 marche aussi si vous l'avez désinstallée ou perdu votre téléphone. La suppression est faite sous
@@ -31,7 +36,7 @@ Gérer les applications → Interior Mood → Options → supprimer les données
 
 | Donnée | Suppression |
 | --- | --- |
-| Compte de connexion : identifiant, nom, adresse e-mail (Firebase Authentication) | Sur demande par e-mail |
+| Compte de connexion : identifiant, nom, adresse e-mail (Firebase Authentication) | Dans l'application (Supprimer mon compte), ou sur demande |
 | Profil : nom affiché, réglages, date et taille de la dernière sauvegarde (Cloud Firestore) | Dans l'application, ou sur demande |
 | Sauvegardes en ligne dans votre Google Drive | Dans l'application, ou par vous-même dans Google Drive |
 | Dossiers chantier partagés : équipe, invitations, discussions, photos, documents, demandes de modification | Sur demande par e-mail |

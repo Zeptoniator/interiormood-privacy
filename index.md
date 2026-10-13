@@ -1,11 +1,12 @@
 # Politique de confidentialité
 
-_Dernière mise à jour : 8 octobre 2026._
+_Dernière mise à jour : 13 octobre 2026._
 
 Interior Mood est une application Android d'aménagement intérieur en 3D, éditée par un
-particulier. Elle fonctionne **entièrement sur votre appareil** : elle ne demande pas l'accès
-à Internet, ne propose pas de compte, n'affiche pas de publicité et n'intègre aucun outil de
-mesure d'audience. L'éditeur ne reçoit aucune donnée vous concernant.
+particulier. Elle fonctionne **sur votre appareil** : sans compte, rien n'est envoyé. Un
+**compte Google facultatif** permet de sauvegarder vos données dans votre propre Google Drive et
+de **partager un dossier chantier** avec les personnes que vous invitez (sections 6 bis et 6 ter).
+L'application n'affiche pas de publicité et n'intègre aucun outil de mesure d'audience.
 
 ## 1. Responsable
 
@@ -29,7 +30,8 @@ Contact : **serge.simono27@gmail.com**
 | Réglages de l'application | Conserver vos préférences | Jusqu'à la désinstallation |
 
 Ces données restent dans l'espace privé de l'application. Elles ne sont envoyées ni à
-l'éditeur ni à un tiers.
+l'éditeur ni à un tiers, sauf ce que vous choisissez de sauvegarder en ligne ou de partager
+(sections 6 bis et 6 ter).
 
 ## 3. Caméra, scan de la pièce et photos de chantier
 
@@ -39,8 +41,9 @@ autorisation.
 Une **photo de chantier** est prise par l'application appareil photo de votre téléphone, puis
 gardée dans l'espace privé d'Interior Mood ; une photo choisie dans votre galerie y est copiée.
 Elle conserve les métadonnées que votre appareil photo y a écrites — dont la **position**, si vous
-avez activé cette option dans votre appareil photo. Interior Mood ne lit pas cette position et
-n'envoie aucune photo.
+avez activé cette option dans votre appareil photo. Interior Mood ne lit pas cette position.
+Seules les photos des tâches et des réserves d'un dossier que vous partagez sont envoyées
+(section 6 ter) : **réduites et sans ces métadonnées**, sauf si vous choisissez d'envoyer l'original.
 
 Pour le scan :
 les images de la caméra sont analysées **sur l'appareil**, en temps réel, et **ne sont jamais
@@ -60,8 +63,8 @@ relire le fichier à son emplacement) ou **copié** dans l'espace privé de l'ap
 
 Lorsque vous importez un devis, son texte est lu par reconnaissance de caractères
 (**ML Kit**, de Google) **entièrement sur l'appareil** : le modèle est intégré à
-l'application, et l'application n'a pas l'autorisation d'accéder à Internet. Ni le document
-ni son texte ne sont envoyés à l'éditeur, à Google ou à un tiers. Les montants et
+l'application et la lecture se fait sans connexion. Ni le document ni son texte ne sont
+envoyés à l'éditeur, à Google ou à un tiers. Les montants et
 informations repérés vous sont proposés, et ne sont enregistrés qu'après votre validation.
 
 Les coordonnées des artisans que vous saisissez concernent d'autres personnes : elles restent
@@ -96,26 +99,64 @@ nouvel appareil. Cette sauvegarde est gérée par Android et Google, chiffrée, 
 a pas accès. Les documents copiés et les photos de chantier en sont exclus en raison de leur taille ; ils sont en
 revanche transférés lors d'un transfert direct vers un nouvel appareil. Vous pouvez la désactiver dans les réglages de votre téléphone.
 
+## 6 bis. Compte Google et sauvegarde en ligne (facultatifs)
+
+La connexion avec Google n'est jamais nécessaire pour utiliser l'application. Si vous vous
+connectez :
+
+- votre **identifiant de compte**, votre **nom** et votre **adresse e-mail** sont transmis par
+  Google au service d'authentification **Firebase** ;
+- un **profil** (nom affiché, quelques réglages, date et taille de la dernière sauvegarde) est
+  enregistré dans **Cloud Firestore** (Firebase, serveurs en Europe), lisible par vous seul ;
+- la **sauvegarde en ligne**, lorsque vous la lancez, est une archive de vos projets, photos et
+  documents déposée dans un **dossier caché de votre propre Google Drive**, que seule
+  l'application peut lire. L'éditeur n'y a pas accès.
+
+Firebase et Google Drive sont fournis par Google et régis par les
+[règles de confidentialité de Google](https://policies.google.com/privacy). Vous pouvez
+supprimer votre profil et votre sauvegarde depuis votre profil dans l'application ; la
+déconnexion retire l'accès de l'application à votre compte.
+
+## 6 ter. Dossiers chantier partagés
+
+Partager un dossier chantier n'arrive que si vous invitez quelqu'un. Le dossier partagé est alors
+enregistré dans **Cloud Firestore** (Firebase, serveurs en Europe) :
+
+- l'**équipe** : nom affiché, rôle et droits de chaque membre (pas leur adresse e-mail) ;
+- les **invitations** : nom de la personne qui invite, nom du dossier, rôle proposé et, si vous la
+  saisissez, l'adresse e-mail de la personne invitée ;
+- les **discussions**, épingles dans la 3D, fil d'activité, propositions et versions du design
+  des pièces partagées, et la **présence** (l'écran ou la pièce où chacun se trouve) ;
+- la **vue du chantier** : les lots, les tâches (dates, état, avancement), les réserves et
+  problèmes (avec les noms des pièces et des entreprises), les demandes de photos et les
+  **photos** de ces tâches et réserves.
+
+Ne sont **jamais** partagés : les montants (devis, factures, paiements, budget), vos notes
+privées, les coordonnées des artisans, ni vos autres projets. Chaque membre ne voit que ce que
+ses droits lui ouvrent, et ces droits sont vérifiés par le serveur. Les données d'un dossier
+partagé restent en ligne tant que le dossier est partagé ; pour les faire supprimer, écrivez
+à l'adresse de contact.
+
 ## 7. Ce qui n'est jamais fait
 
-- aucune collecte de données personnelles par l'éditeur ;
+- aucune utilisation de vos données par l'éditeur au-delà des fonctions décrites ici ;
 - aucune publicité, aucun suivi, aucune mesure d'audience ;
 - aucune vente, location ou cession de données ;
 - aucune localisation.
 
 ## 8. Enfants
 
-L'application ne s'adresse pas spécifiquement aux enfants et ne collecte aucune donnée,
-y compris les leurs.
+L'application ne s'adresse pas spécifiquement aux enfants.
 
 ## 9. Vos droits
 
-Toutes vos données étant sur votre appareil, vous en gardez la maîtrise : supprimez un projet
-dans l'application, ou effacez toutes ses données en la désinstallant ou depuis les réglages
-Android. Pour toute question : **serge.simono27@gmail.com**.
+Vos données sont sur votre appareil et vous en gardez la maîtrise : supprimez un projet dans
+l'application, ou effacez toutes ses données en la désinstallant ou depuis les réglages
+Android. Le profil et la sauvegarde en ligne se suppriment depuis votre profil (section 6 bis).
+Pour accéder aux données d'un dossier partagé, les rectifier ou les faire supprimer, et pour
+toute question : **serge.simono27@gmail.com**.
 
 ## 10. Modifications
 
 Toute évolution de cette politique sera publiée sur cette page, avec sa date de mise à jour.
-Si une fonction en ligne est ajoutée un jour, elle sera facultative et décrite ici avant sa
-mise à disposition.
+Toute nouvelle fonction en ligne sera facultative et décrite ici avant sa mise à disposition.

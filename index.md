@@ -129,10 +129,15 @@ enregistré dans **Cloud Firestore** (Firebase, serveurs en Europe) :
   des pièces partagées, et la **présence** (l'écran ou la pièce où chacun se trouve) ;
 - la **vue du chantier** : les lots, les tâches (dates, état, avancement), les réserves et
   problèmes (avec les noms des pièces et des entreprises), les demandes de photos et les
-  **photos** de ces tâches et réserves.
+  **photos** de ces tâches et réserves ;
+- les **documents partagés** (ceux que vous choisissez de partager, et ceux que l'équipe envoie,
+  comme un devis), avec leurs versions et qui les a relus ;
+- les **demandes de modification** de l'équipe, avec leur **coût** et leur délai, et votre décision.
 
-Ne sont **jamais** partagés : les montants (devis, factures, paiements, budget), vos notes
-privées, les coordonnées des artisans, ni vos autres projets. Chaque membre ne voit que ce que
+Ne sont **jamais** partagés : les autres montants de votre dossier (devis saisis, factures,
+paiements, budget), vos notes privées, les coordonnées des artisans, ni vos autres projets.
+Dans l'application, les documents financiers (devis, factures, contrats) et les coûts ne
+s'affichent qu'aux membres qui voient le budget, et à leur auteur. Chaque membre ne voit que ce que
 ses droits lui ouvrent, et ces droits sont vérifiés par le serveur. Les données d'un dossier
 partagé restent en ligne tant que le dossier est partagé ; pour les faire supprimer, écrivez
 à l'adresse de contact.

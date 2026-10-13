@@ -6,7 +6,9 @@ Interior Mood est une application Android d'aménagement intérieur en 3D, édit
 particulier. Elle fonctionne **sur votre appareil** : sans compte, rien n'est envoyé. Un
 **compte Google facultatif** permet de sauvegarder vos données dans votre propre Google Drive et
 de **partager un dossier chantier** avec les personnes que vous invitez (sections 6 bis et 6 ter).
-L'application n'affiche pas de publicité et n'intègre aucun outil de mesure d'audience.
+Si vous connectez votre **Home Assistant**, l'application échange directement avec lui
+(section 6 quater). L'application n'affiche pas de publicité et n'intègre aucun outil de mesure
+d'audience.
 
 ## 1. Responsable
 
@@ -26,6 +28,8 @@ Contact : **serge.simono27@gmail.com**
 | Photos de chantier | Garder l'état avant, l'avancement et le résultat des travaux | Jusqu'à ce que vous les supprimiez ou désinstalliez l'application |
 | Documents copiés dans l'application (devis, factures, photos) | Les retrouver même si l'original est déplacé | Jusqu'à ce que vous les supprimiez ou désinstalliez l'application |
 | Fichiers exportés (rapport, tableurs, données, sauvegarde) avant leur partage | Vous les remettre pour que vous les partagiez ou les enregistriez | Dossier temporaire : effacés lors d'un export suivant s'ils ont plus de 24 heures, ou par Android quand il libère de la place |
+| Maison connectée : sources reliées (adresse de votre Home Assistant), appareils, pièces que vous leur donnez, dernières valeurs mesurées | Afficher votre logement en direct, même sans connexion | Jusqu'à ce que vous retiriez la source ou désinstalliez l'application |
+| Jeton d'accès à Home Assistant | Vous connecter à votre Home Assistant | Chiffré sur l'appareil ; effacé quand vous retirez la connexion |
 | Miniatures des projets | Afficher la liste des projets | Recréées au besoin, jamais sauvegardées |
 | Réglages de l'application | Conserver vos préférences | Jusqu'à la désinstallation |
 
@@ -97,7 +101,8 @@ Si la sauvegarde est activée dans les réglages de votre téléphone, Android p
 projets et réglages de l'application dans **votre** compte Google, pour les restaurer sur un
 nouvel appareil. Cette sauvegarde est gérée par Android et Google, chiffrée, et l'éditeur n'y
 a pas accès. Les documents copiés et les photos de chantier en sont exclus en raison de leur taille ; ils sont en
-revanche transférés lors d'un transfert direct vers un nouvel appareil. Vous pouvez la désactiver dans les réglages de votre téléphone.
+revanche transférés lors d'un transfert direct vers un nouvel appareil. Le jeton d'accès à Home Assistant
+n'est jamais sauvegardé ni transféré : sur un nouvel appareil, il faut le saisir à nouveau. Vous pouvez la désactiver dans les réglages de votre téléphone.
 
 ## 6 bis. Compte Google et sauvegarde en ligne (facultatifs)
 
@@ -143,6 +148,31 @@ contrats) et les coûts ne s'affichent qu'aux membres qui voient le budget, et �
 N'invitez donc que des personnes à qui vous confiez le contenu du dossier. Les données d'un dossier
 partagé restent en ligne tant que le dossier est partagé ; pour les faire supprimer, écrivez
 à l'adresse de contact.
+
+## 6 quater. Maison connectée (facultative)
+
+L'onglet « En direct » montre, pièce par pièce, ce que mesurent vos capteurs et l'état de vos
+appareils. Il ne fonctionne que si vous reliez une source :
+
+- la **maison de démonstration** simule des valeurs sur l'appareil ; rien n'est échangé ;
+- **Home Assistant** : l'application se connecte **directement** à votre Home Assistant, à
+  l'adresse que vous indiquez (sur votre réseau domestique, ou l'adresse d'accès à distance que
+  vous avez choisie), avec un **jeton d'accès** que vous créez dans Home Assistant. Elle y lit la
+  liste de vos zones, appareils et entités et leur état (températures, humidité, CO₂, éclairage,
+  consommation, ouvertures, présence…). Rien ne passe par l'éditeur ni par un tiers, en dehors
+  du service d'accès à distance que vous utilisez peut-être déjà pour Home Assistant.
+
+Le jeton est **chiffré** avec une clé qui ne quitte pas l'appareil (Android Keystore) ; il n'est
+jamais affiché, journalisé, sauvegardé ni partagé. Les dernières valeurs sont gardées sur
+l'appareil pour afficher le logement hors connexion ; la **présence** (une pièce occupée ou non)
+n'est jamais enregistrée. Ces données ne sont **jamais** envoyées aux membres d'un dossier
+chantier partagé.
+
+Sur Android 17 et suivants, joindre un Home Assistant sur votre réseau domestique demande
+l'autorisation « appareils à proximité / réseau local », que l'application ne demande qu'au
+moment où vous le connectez. Retirer la connexion efface ses appareils, leurs valeurs et le
+jeton de l'appareil ; le jeton reste valable dans Home Assistant tant que vous ne l'y supprimez
+pas.
 
 ## 7. Ce qui n'est jamais fait
 

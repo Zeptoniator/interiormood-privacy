@@ -30,6 +30,7 @@ Contact : **serge.simono27@gmail.com**
 | Fichiers exportés (rapport, tableurs, données, sauvegarde) avant leur partage | Vous les remettre pour que vous les partagiez ou les enregistriez | Dossier temporaire : effacés lors d'un export suivant s'ils ont plus de 24 heures, ou par Android quand il libère de la place |
 | Maison connectée : sources reliées (adresse de votre Home Assistant), appareils, pièces que vous leur donnez, dernières valeurs mesurées | Afficher votre logement en direct, même sans connexion | Jusqu'à ce que vous retiriez la source ou désinstalliez l'application |
 | Historique de la maison connectée : relevés, résumés, événements (la présence seulement si vous l'activez) | Afficher l'évolution de chaque pièce | 7 jours, 90 jours et sans limite par défaut, réglables ; effaçable à tout moment |
+| Prix du kWh que vous saisissez | Estimer le coût de votre consommation | Jusqu'à ce que vous le retiriez ou désinstalliez l'application |
 | Jeton d'accès à Home Assistant | Vous connecter à votre Home Assistant | Chiffré sur l'appareil ; effacé quand vous retirez la connexion |
 | Miniatures des projets | Afficher la liste des projets | Recréées au besoin, jamais sauvegardées |
 | Réglages de l'application | Conserver vos préférences | Jusqu'à la désinstallation |
@@ -183,6 +184,12 @@ des avis médicaux. Les notifications sont locales. Si vous l'activez, l'applica
 votre logement environ toutes les 15 minutes même fermée ; sinon, rien ne tourne en arrière-plan.
 Les conseils (« le CO₂ dépasse votre seuil la plupart des nuits… ») sont calculés sur l'appareil
 à partir de votre historique.
+
+**Énergie.** L'écran « Énergie » calcule sur l'appareil la consommation par heure, jour et mois à
+partir de vos compteurs et de vos prises qui mesurent. Pour savoir quel capteur est le compteur
+du réseau, la production solaire ou une batterie, l'application lit les réglages « Énergie » de
+votre Home Assistant, sans les modifier. Le prix du kWh que vous saisissez reste sur l'appareil ;
+aucun prix n'est récupéré en ligne et rien n'est envoyé à un fournisseur d'énergie.
 
 Sur Android 17 et suivants, joindre un Home Assistant sur votre réseau domestique demande
 l'autorisation « appareils à proximité / réseau local », que l'application ne demande qu'au

@@ -136,9 +136,11 @@ enregistré dans **Cloud Firestore** (Firebase, serveurs en Europe) :
 
 Ne sont **jamais** partagés : les autres montants de votre dossier (devis saisis, factures,
 paiements, budget), vos notes privées, les coordonnées des artisans, ni vos autres projets.
-Dans l'application, les documents financiers (devis, factures, contrats) et les coûts ne
-s'affichent qu'aux membres qui voient le budget, et à leur auteur. Chaque membre ne voit que ce que
-ses droits lui ouvrent, et ces droits sont vérifiés par le serveur. Les données d'un dossier
+Les données d'un dossier partagé sont transmises aux téléphones de **tous ses membres**. Le
+serveur vérifie ce que chacun a le droit de **modifier** ; ce que chacun **voit** est filtré
+par l'application selon ses droits : par exemple, les documents financiers (devis, factures,
+contrats) et les coûts ne s'affichent qu'aux membres qui voient le budget, et à leur auteur.
+N'invitez donc que des personnes à qui vous confiez le contenu du dossier. Les données d'un dossier
 partagé restent en ligne tant que le dossier est partagé ; pour les faire supprimer, écrivez
 à l'adresse de contact.
 

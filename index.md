@@ -177,6 +177,13 @@ réglez ces durées et pouvez tout effacer dans « Historique et données ». L'
 **présence** n'est pas gardé, sauf si vous l'activez. L'export en CSV n'a lieu qu'à votre
 demande : le fichier est remis à l'application que vous choisissez.
 
+**Alertes.** L'application signale sur l'appareil ce qui mérite attention (fuite d'eau, CO₂ ou
+humidité élevés, appareil muet, pile faible…), à partir des mesures uniquement : ce ne sont pas
+des avis médicaux. Les notifications sont locales. Si vous l'activez, l'application vérifie
+votre logement environ toutes les 15 minutes même fermée ; sinon, rien ne tourne en arrière-plan.
+Les conseils (« le CO₂ dépasse votre seuil la plupart des nuits… ») sont calculés sur l'appareil
+à partir de votre historique.
+
 Sur Android 17 et suivants, joindre un Home Assistant sur votre réseau domestique demande
 l'autorisation « appareils à proximité / réseau local », que l'application ne demande qu'au
 moment où vous le connectez. Retirer la connexion efface ses appareils, leurs valeurs et le

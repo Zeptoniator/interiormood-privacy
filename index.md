@@ -29,6 +29,7 @@ Contact : **serge.simono27@gmail.com**
 | Documents copiés dans l'application (devis, factures, photos) | Les retrouver même si l'original est déplacé | Jusqu'à ce que vous les supprimiez ou désinstalliez l'application |
 | Fichiers exportés (rapport, tableurs, données, sauvegarde) avant leur partage | Vous les remettre pour que vous les partagiez ou les enregistriez | Dossier temporaire : effacés lors d'un export suivant s'ils ont plus de 24 heures, ou par Android quand il libère de la place |
 | Maison connectée : sources reliées (adresse de votre Home Assistant), appareils, pièces que vous leur donnez, dernières valeurs mesurées | Afficher votre logement en direct, même sans connexion | Jusqu'à ce que vous retiriez la source ou désinstalliez l'application |
+| Historique de la maison connectée : relevés, résumés, événements (la présence seulement si vous l'activez) | Afficher l'évolution de chaque pièce | 7 jours, 90 jours et sans limite par défaut, réglables ; effaçable à tout moment |
 | Jeton d'accès à Home Assistant | Vous connecter à votre Home Assistant | Chiffré sur l'appareil ; effacé quand vous retirez la connexion |
 | Miniatures des projets | Afficher la liste des projets | Recréées au besoin, jamais sauvegardées |
 | Réglages de l'application | Conserver vos préférences | Jusqu'à la désinstallation |
@@ -167,6 +168,14 @@ jamais affiché, journalisé, sauvegardé ni partagé. Les dernières valeurs so
 l'appareil pour afficher le logement hors connexion ; la **présence** (une pièce occupée ou non)
 n'est jamais enregistrée. Ces données ne sont **jamais** envoyées aux membres d'un dossier
 chantier partagé.
+
+**Historique.** L'application garde sur l'appareil l'historique des mesures et des événements
+(fenêtre ouverte, chauffage en marche, lumière allumée) pour afficher des courbes ; elle le
+complète avec l'historique que votre Home Assistant conserve déjà. Par défaut, chaque relevé est
+gardé 7 jours, des résumés par quart d'heure 90 jours et des résumés par jour sans limite ; vous
+réglez ces durées et pouvez tout effacer dans « Historique et données ». L'historique de
+**présence** n'est pas gardé, sauf si vous l'activez. L'export en CSV n'a lieu qu'à votre
+demande : le fichier est remis à l'application que vous choisissez.
 
 Sur Android 17 et suivants, joindre un Home Assistant sur votre réseau domestique demande
 l'autorisation « appareils à proximité / réseau local », que l'application ne demande qu'au

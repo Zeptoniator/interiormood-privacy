@@ -199,6 +199,13 @@ appareil que si vous l'avez accepté en la créant. L'historique des déclenchem
 reste sur l'appareil. Les résumés du matin et du soir, si vous les demandez, sont des notifications
 locales.
 
+**Appareils Matter.** Pour ajouter un appareil Matter, son code d'appairage (lu sur l'appareil ou
+scanné) est vérifié sur le téléphone puis envoyé à votre Home Assistant seulement, qui l'ajoute à
+son réseau Matter ; il n'est pas gardé. Pour un appareil neuf, l'application ouvre l'assistant de
+Google Play services, qui trouve l'appareil en Bluetooth et lui donne votre réseau : cette étape
+est traitée par Google selon ses propres règles. Le lecteur de QR code est aussi celui de Google
+Play services : l'application ne reçoit que le texte du code, jamais les images de la caméra.
+
 Sur Android 17 et suivants, joindre un Home Assistant sur votre réseau domestique demande
 l'autorisation « appareils à proximité / réseau local », que l'application ne demande qu'au
 moment où vous le connectez. Retirer la connexion efface ses appareils, leurs valeurs et le
